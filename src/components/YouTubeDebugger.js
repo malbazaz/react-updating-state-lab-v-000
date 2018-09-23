@@ -7,6 +7,12 @@ export default class YouTubeDebugger extends Component {
       js { errors: [], user: null, settings: { bitrate: 8, video: { resolution: '1080p' } } }
     }
   }
+  clickBitrate = () =>{
+    
+  }
+  clickResolution = () => {
+    
+  }
   render(){
     return(
       <button class='bitrate'></button>
