@@ -11,13 +11,21 @@ export default class YouTubeDebugger extends Component {
     this.setState({
       js: {
         ...this.state.js, settings: {
-          ...this.state.settings, bitrate: 12 
+          ...this.state.settings, bitrate: 12
         }
       }
     })
   }
   clickResolution = () => {
-
+    this.setState({
+      js:{
+        ...this.state.js, setting:{
+          ...this.state.settings, video: {
+            resolution: '720p'
+          }
+        }
+      }
+    })
   }
   render(){
     return(
