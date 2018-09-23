@@ -8,15 +8,15 @@ export default class YouTubeDebugger extends Component {
     }
   }
   clickBitrate = () =>{
-    
+
   }
   clickResolution = () => {
-    
+
   }
   render(){
     return(
-      <button class='bitrate'></button>
-      <button class='resolution'></button>
+      <button class='bitrate' onClick={this.clickBitrate}></button>
+      <button class='resolution' onClick={this.clickResolution}></button>
     )
   }
 }
