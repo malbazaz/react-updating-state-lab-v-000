@@ -8,7 +8,13 @@ export default class YouTubeDebugger extends Component {
     }
   }
   clickBitrate = () =>{
-
+    this.setState({
+      js: {
+        ...this.state.js, settings: {
+          ...this.state.settings, bitrate: 12 
+        }
+      }
+    })
   }
   clickResolution = () => {
 
